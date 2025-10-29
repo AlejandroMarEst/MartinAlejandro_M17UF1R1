@@ -16,34 +16,24 @@ public class MoveBehaviour : MonoBehaviour
     }
     void FixedUpdate()
     {
-        groundCheck = Physics2D.Raycast(_rb.position, Vector2.down, 1f);
-        if (groundCheck.collider != null)
+        groundCheck = Physics2D.Raycast(new Vector2(_rb.position.x, _rb.position.y - 0.7f), Vector2.down, 0.1f);
+        if (groundCheck.collider != null && groundCheck.collider.gameObject.layer == 6)
         {
-            if (groundCheck.collider.name == "Ground")
-            {
-                isGrounded = true;
-            }
-            else
-            {
-                isGrounded = false;
-            }
-            Debug.Log(groundCheck.collider.name);
-            Debug.DrawRay(_rb.position, Vector2.down, Color.red);
+            isGrounded = true;
         } else
         {
             isGrounded = false;
         }
+        Debug.DrawRay(new Vector2(_rb.position.x, _rb.position.y - 0.7f), Vector2.down * 0.1f, Color.red);
     }
     public void MoveCharacter(Vector2 direction)
     {
         _rb.linearVelocity = new Vector2(direction.normalized.x * speed, _rb.linearVelocity.y);
         _anim.RunAnimation(direction);
-
-
     }
     public void Jump()
     {
-        if (true)
+        if (isGrounded)
         {
             _rb.linearVelocity = new Vector2(_rb.linearVelocity.x, jumpHeight);
         }
