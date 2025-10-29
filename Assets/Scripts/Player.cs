@@ -14,10 +14,12 @@ public class Player : Character, InputSystem_Actions.IPlayerActions
     }
     void Update()
     {
-        if (input != Vector2.zero)
-        {
-            _mb.MoveCharacter(input);
-        }
+        
+    }
+
+    void FixedUpdate()
+    {
+        _mb.MoveCharacter(input);
     }
 
     private void OnEnable()
@@ -43,7 +45,10 @@ public class Player : Character, InputSystem_Actions.IPlayerActions
 
     public void OnJump(InputAction.CallbackContext context)
     {
-        _mb.Jump();
+        if (context.performed)
+        {
+            _mb.Jump();
+        }
     }
 
     public void OnMove(InputAction.CallbackContext context)
