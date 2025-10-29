@@ -22,4 +22,9 @@ public class AnimationController : MonoBehaviour
         }
         _animator.SetFloat("Velocity", direction.magnitude);
     }
+
+    public void JumpAnimation()
+    {
+        _animator.SetBool("Jumping", true);
+    }
 }

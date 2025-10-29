@@ -36,6 +36,7 @@ public class MoveBehaviour : MonoBehaviour
         if (isGrounded)
         {
             _rb.linearVelocity = new Vector2(_rb.linearVelocity.x, jumpHeight);
+            _anim.JumpAnimation();
         }
     }
 }
