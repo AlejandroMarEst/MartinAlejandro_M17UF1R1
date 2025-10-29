@@ -134,7 +134,8 @@ GameObject:
   - component: {fileID: 56136889}
   - component: {fileID: 56136891}
   - component: {fileID: 56136892}
-  m_Layer: 0
+  - component: {fileID: 56136893}
+  m_Layer: 7
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -209,7 +210,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 5770251550782387183, guid: 1817edbdd46617b40b91bc8e16046584, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 0.18, y: 0.36}
@@ -324,8 +325,8 @@ BoxCollider2D:
   m_Offset: {x: 0.00037207082, y: 0.0048362613}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.18, y: 0.36}
+    pivot: {x: 0.35, y: 0.45}
+    oldSize: {x: 0.8, y: 0.8}
     newSize: {x: 0.18, y: 0.36}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -333,6 +334,18 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.16586325, y: 0.3131256}
   m_EdgeRadius: 0
+--- !u!114 &56136893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 56136885}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fffbee344775d7c4592fa68670170e7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -613,7 +626,7 @@ GameObject:
   - component: {fileID: 1208920111}
   - component: {fileID: 1208920110}
   - component: {fileID: 1208920114}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Forest
   m_TagString: Untagged
   m_Icon: {fileID: 0}
