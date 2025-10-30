@@ -19,10 +19,15 @@ public class MoveBehaviour : MonoBehaviour
         groundCheck = Physics2D.Raycast(new Vector2(_rb.position.x, _rb.position.y - 0.7f), Vector2.down, 0.1f);
         if (groundCheck.collider != null && groundCheck.collider.gameObject.layer == 6)
         {
+            if (!isGrounded)
+            {
+                _anim.LandAnimation();
+            }
             isGrounded = true;
         } else
         {
             isGrounded = false;
+            _anim.FallAnimation();
         }
         Debug.DrawRay(new Vector2(_rb.position.x, _rb.position.y - 0.7f), Vector2.down * 0.1f, Color.red);
     }

@@ -45,10 +45,7 @@ public class Player : Character, InputSystem_Actions.IPlayerActions
 
     public void OnJump(InputAction.CallbackContext context)
     {
-        if (context.performed)
-        {
-            _mb.Jump();
-        }
+        _mb.Jump();
     }
 
     public void OnMove(InputAction.CallbackContext context)

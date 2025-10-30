@@ -27,4 +27,14 @@ public class AnimationController : MonoBehaviour
     {
         _animator.SetBool("Jumping", true);
     }
+    public void FallAnimation()
+    {
+        _animator.SetBool("Jumping", false);
+        _animator.SetBool("Falling", true);
+    }
+    public void LandAnimation()
+    {
+        _animator.SetBool("Falling", false);
+        _animator.SetTrigger("Landing");
+    }
 }
