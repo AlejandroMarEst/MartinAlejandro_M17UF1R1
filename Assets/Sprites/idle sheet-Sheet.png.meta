@@ -167,12 +167,12 @@ TextureImporter:
       name: idle sheet-Sheet_0
       rect:
         serializedVersion: 2
-        x: 19
-        y: 18
-        width: 18
-        height: 36
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 0
+        y: 0
+        width: 80
+        height: 80
+      alignment: 9
+      pivot: {x: 0.35, y: 0.45}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -189,12 +189,12 @@ TextureImporter:
       name: idle sheet-Sheet_1
       rect:
         serializedVersion: 2
-        x: 99
-        y: 18
-        width: 18
-        height: 36
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 80
+        y: 0
+        width: 80
+        height: 80
+      alignment: 9
+      pivot: {x: 0.35, y: 0.45}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -211,12 +211,12 @@ TextureImporter:
       name: idle sheet-Sheet_2
       rect:
         serializedVersion: 2
-        x: 180
-        y: 18
-        width: 18
-        height: 36
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 160
+        y: 0
+        width: 80
+        height: 80
+      alignment: 9
+      pivot: {x: 0.35, y: 0.45}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -233,12 +233,12 @@ TextureImporter:
       name: idle sheet-Sheet_3
       rect:
         serializedVersion: 2
-        x: 259
-        y: 18
-        width: 21
-        height: 36
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 240
+        y: 0
+        width: 80
+        height: 80
+      alignment: 9
+      pivot: {x: 0.35, y: 0.45}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -255,12 +255,12 @@ TextureImporter:
       name: idle sheet-Sheet_4
       rect:
         serializedVersion: 2
-        x: 339
-        y: 18
-        width: 21
-        height: 36
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 320
+        y: 0
+        width: 80
+        height: 80
+      alignment: 9
+      pivot: {x: 0.35, y: 0.45}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -277,12 +277,12 @@ TextureImporter:
       name: idle sheet-Sheet_5
       rect:
         serializedVersion: 2
-        x: 418
-        y: 18
-        width: 24
-        height: 36
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 400
+        y: 0
+        width: 80
+        height: 80
+      alignment: 9
+      pivot: {x: 0.35, y: 0.45}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -299,12 +299,12 @@ TextureImporter:
       name: idle sheet-Sheet_6
       rect:
         serializedVersion: 2
-        x: 497
-        y: 18
-        width: 25
-        height: 36
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 480
+        y: 0
+        width: 80
+        height: 80
+      alignment: 9
+      pivot: {x: 0.35, y: 0.45}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -321,12 +321,12 @@ TextureImporter:
       name: idle sheet-Sheet_7
       rect:
         serializedVersion: 2
-        x: 577
-        y: 18
-        width: 25
-        height: 36
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 560
+        y: 0
+        width: 80
+        height: 80
+      alignment: 9
+      pivot: {x: 0.35, y: 0.45}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -343,12 +343,12 @@ TextureImporter:
       name: idle sheet-Sheet_8
       rect:
         serializedVersion: 2
-        x: 658
-        y: 18
-        width: 22
-        height: 36
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 640
+        y: 0
+        width: 80
+        height: 80
+      alignment: 9
+      pivot: {x: 0.35, y: 0.45}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -365,12 +365,12 @@ TextureImporter:
       name: idle sheet-Sheet_9
       rect:
         serializedVersion: 2
-        x: 738
-        y: 18
-        width: 21
-        height: 36
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 720
+        y: 0
+        width: 80
+        height: 80
+      alignment: 9
+      pivot: {x: 0.35, y: 0.45}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -387,12 +387,12 @@ TextureImporter:
       name: idle sheet-Sheet_10
       rect:
         serializedVersion: 2
-        x: 819
-        y: 18
-        width: 19
-        height: 36
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 800
+        y: 0
+        width: 80
+        height: 80
+      alignment: 9
+      pivot: {x: 0.35, y: 0.45}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -409,12 +409,12 @@ TextureImporter:
       name: idle sheet-Sheet_11
       rect:
         serializedVersion: 2
-        x: 898
-        y: 18
-        width: 19
-        height: 36
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 880
+        y: 0
+        width: 80
+        height: 80
+      alignment: 9
+      pivot: {x: 0.35, y: 0.45}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -431,12 +431,12 @@ TextureImporter:
       name: idle sheet-Sheet_12
       rect:
         serializedVersion: 2
-        x: 978
-        y: 18
-        width: 19
-        height: 36
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 960
+        y: 0
+        width: 80
+        height: 80
+      alignment: 9
+      pivot: {x: 0.35, y: 0.45}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -453,12 +453,12 @@ TextureImporter:
       name: idle sheet-Sheet_13
       rect:
         serializedVersion: 2
-        x: 1057
-        y: 18
-        width: 20
-        height: 36
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 1040
+        y: 0
+        width: 80
+        height: 80
+      alignment: 9
+      pivot: {x: 0.35, y: 0.45}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -475,12 +475,12 @@ TextureImporter:
       name: idle sheet-Sheet_14
       rect:
         serializedVersion: 2
-        x: 1136
-        y: 18
-        width: 23
-        height: 36
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 1120
+        y: 0
+        width: 80
+        height: 80
+      alignment: 9
+      pivot: {x: 0.35, y: 0.45}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -497,12 +497,12 @@ TextureImporter:
       name: idle sheet-Sheet_15
       rect:
         serializedVersion: 2
-        x: 1216
-        y: 18
-        width: 23
-        height: 36
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 1200
+        y: 0
+        width: 80
+        height: 80
+      alignment: 9
+      pivot: {x: 0.35, y: 0.45}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -519,12 +519,12 @@ TextureImporter:
       name: idle sheet-Sheet_16
       rect:
         serializedVersion: 2
-        x: 1296
-        y: 18
-        width: 23
-        height: 36
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 1280
+        y: 0
+        width: 80
+        height: 80
+      alignment: 9
+      pivot: {x: 0.35, y: 0.45}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -541,12 +541,12 @@ TextureImporter:
       name: idle sheet-Sheet_17
       rect:
         serializedVersion: 2
-        x: 1378
-        y: 18
-        width: 20
-        height: 36
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 1360
+        y: 0
+        width: 80
+        height: 80
+      alignment: 9
+      pivot: {x: 0.35, y: 0.45}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
