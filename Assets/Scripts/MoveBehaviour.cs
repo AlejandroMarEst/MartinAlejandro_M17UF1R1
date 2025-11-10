@@ -7,7 +7,9 @@ public class MoveBehaviour : MonoBehaviour
     public float speed;
     public float jumpHeight;
     private bool isGrounded;
+    private bool isFlipped = false;
     private RaycastHit2D groundCheck;
+    public LayerMask _ground;
 
     private void Awake()
     {
@@ -16,8 +18,9 @@ public class MoveBehaviour : MonoBehaviour
     }
     void FixedUpdate()
     {
-        groundCheck = Physics2D.Raycast(new Vector2(_rb.position.x, _rb.position.y - 0.7f), Vector2.down, 0.1f);
-        if (groundCheck.collider != null && groundCheck.collider.gameObject.layer == 6)
+        float raycastOffset = isFlipped ? -0.9f : 0.7f;
+        groundCheck = Physics2D.Raycast(new Vector2(_rb.position.x, _rb.position.y - raycastOffset), -transform.up, 0.2f, _ground);
+        if (groundCheck.collider != null)
         {
             if (!isGrounded)
             {
@@ -29,7 +32,7 @@ public class MoveBehaviour : MonoBehaviour
             isGrounded = false;
             _anim.FallAnimation();
         }
-        Debug.DrawRay(new Vector2(_rb.position.x, _rb.position.y - 0.7f), Vector2.down * 0.1f, Color.red);
+        Debug.DrawRay(new Vector2(_rb.position.x, _rb.position.y - raycastOffset), -transform.up * 0.4f, Color.red);
     }
     public void MoveCharacter(Vector2 direction)
     {
@@ -42,6 +45,16 @@ public class MoveBehaviour : MonoBehaviour
         {
             _rb.linearVelocity = new Vector2(_rb.linearVelocity.x, jumpHeight);
             _anim.JumpAnimation();
+        }
+    }
+    public void FlipGravity()
+    {
+        if (isGrounded)
+        {
+            _rb.gravityScale = -_rb.gravityScale;
+            _rb.transform.localScale = new Vector3(_rb.transform.localScale.x, -_rb.transform.localScale.y, _rb.transform.localScale.z);
+            isFlipped = !isFlipped;
+            jumpHeight = -jumpHeight;
         }
     }
 }

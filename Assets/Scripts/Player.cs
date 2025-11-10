@@ -12,10 +12,6 @@ public class Player : Character, InputSystem_Actions.IPlayerActions
         inputAction = new InputSystem_Actions();
         inputAction.Player.SetCallbacks(this);
     }
-    void Update()
-    {
-        
-    }
 
     void FixedUpdate()
     {
@@ -33,9 +29,9 @@ public class Player : Character, InputSystem_Actions.IPlayerActions
 
     // OnUserInput
 
-    public void OnAttack(InputAction.CallbackContext context)
+    public void OnInteract(InputAction.CallbackContext context)
     {
-        throw new System.NotImplementedException();
+        _mb.FlipGravity();
     }
 
     public void OnCrouch(InputAction.CallbackContext context)
