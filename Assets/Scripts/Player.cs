@@ -48,4 +48,12 @@ public class Player : Character, InputSystem_Actions.IPlayerActions
     {
         input = context.ReadValue<Vector2>();
     }
+    public void StopPlayer()
+    {
+        inputAction.Disable();
+    }
+    public void ResumePlayer()
+    {
+        inputAction.Enable();
+    }
 }
