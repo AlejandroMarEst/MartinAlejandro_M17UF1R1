@@ -69,4 +69,8 @@ public class DialogueTrigger : MonoBehaviour, InputSystem_Actions.IUIActions
             _skipped= true;
         }
     }
+
+    public void OnPause(InputAction.CallbackContext context)
+    {
+    }
 }
