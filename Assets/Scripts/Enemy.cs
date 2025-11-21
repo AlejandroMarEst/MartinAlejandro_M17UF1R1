@@ -25,7 +25,7 @@ public class Enemy : Character
         float raycastOffsetY = flipped ? 1.2f : -0.5f;
 
         groundForward = Physics2D.Raycast(new Vector2(transform.position.x + raycastOffsetX, transform.position.y + raycastOffsetY), -transform.up, 2f, _ground);
-        wallCheck = Physics2D.Raycast(new Vector2(transform.position.x + raycastOffsetX, transform.position.y), direction, 0.5f, _ground);
+        wallCheck = Physics2D.Raycast(new Vector2(transform.position.x + raycastOffsetX, transform.position.y), direction, 0.8f, _ground);
         if (groundForward)
         {
             _mb.MoveCharacter(direction);

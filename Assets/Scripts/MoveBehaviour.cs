@@ -6,7 +6,7 @@ public class MoveBehaviour : MonoBehaviour
     private AnimationController _anim;
     public float speed;
     public float jumpHeight;
-    private bool isGrounded;
+    public bool isGrounded;
     private bool isFlipped = false;
     private RaycastHit2D groundCheck;
     public LayerMask _ground;
@@ -46,6 +46,7 @@ public class MoveBehaviour : MonoBehaviour
         {
             _rb.linearVelocity = new Vector2(_rb.linearVelocity.x, jumpHeight);
             _anim.JumpAnimation();
+            isGrounded= false;
         }
     }
     public void FlipGravity()

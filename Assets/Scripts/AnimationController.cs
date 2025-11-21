@@ -35,6 +35,7 @@ public class AnimationController : MonoBehaviour
     }
     public void LandAnimation()
     {
+        _animator.SetBool("Jumping", false);
         _animator.SetBool("Falling", false);
         _animator.SetTrigger("Landing");
     }

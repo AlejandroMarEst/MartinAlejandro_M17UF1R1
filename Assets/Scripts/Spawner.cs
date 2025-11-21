@@ -37,8 +37,7 @@ public class Spawner : MonoBehaviour
                 bull.transform.position = transform.position;
                 bull.GetComponent<Rigidbody2D>().linearVelocity = distanceToSpawnerTarget;
             }
-            Debug.Log(distanceToSpawnerTarget);
-                currentTimeShots += maxTimeBetweenShots;
+            currentTimeShots += maxTimeBetweenShots;
         }
     }
 }
