@@ -27,7 +27,7 @@ public class PauseBehaviour : MonoBehaviour, InputSystem_Actions.IUIActions
     }
     private void OnEnable()
     {
-        _actions.Enable();
+        _actions.Enable();  
     }
     private void OnDisable()
     {

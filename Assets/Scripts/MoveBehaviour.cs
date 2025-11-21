@@ -18,8 +18,8 @@ public class MoveBehaviour : MonoBehaviour
     }
     void FixedUpdate()
     {
-        float raycastOffset = isFlipped ? -0.9f : 0.7f;
-        groundCheck = Physics2D.Raycast(new Vector2(_rb.position.x, _rb.position.y - raycastOffset), -transform.up, 0.2f, _ground);
+        float raycastOffset = isFlipped ? -1.2f : 0.7f;
+        groundCheck = Physics2D.Raycast(new Vector2(_rb.position.x, _rb.position.y - raycastOffset), -transform.up, 1f, _ground);
         if (groundCheck.collider != null)
         {
             if (!isGrounded)
@@ -32,7 +32,7 @@ public class MoveBehaviour : MonoBehaviour
             isGrounded = false;
             _anim.FallAnimation();
         }
-        Debug.DrawRay(new Vector2(_rb.position.x, _rb.position.y - raycastOffset), -transform.up * 0.4f, Color.red);
+        Debug.DrawRay(new Vector2(_rb.position.x, _rb.position.y - raycastOffset), -transform.up * 1f, Color.red);
     }
     public void MoveCharacter(Vector2 direction)
     {
