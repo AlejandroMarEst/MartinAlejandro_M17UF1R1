@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Windows;
 [RequireComponent(typeof(Animator))]
 
 public class AnimationController : MonoBehaviour
@@ -14,11 +15,11 @@ public class AnimationController : MonoBehaviour
     {
         if (direction.x > 0)
         {
-            _spriteRenderer.flipX = true;
-        }
+            gameObject.GetComponent<SpriteRenderer>().flipX = false;
+        } 
         else if (direction.x < 0)
         {
-            _spriteRenderer.flipX = false;
+            gameObject.GetComponent<SpriteRenderer>().flipX = true;
         }
         _animator.SetFloat("Velocity", direction.magnitude);
     }
@@ -34,7 +35,16 @@ public class AnimationController : MonoBehaviour
     }
     public void LandAnimation()
     {
+        _animator.SetBool("Jumping", false);
         _animator.SetBool("Falling", false);
         _animator.SetTrigger("Landing");
+    }
+    public void Respawn()
+    {
+        _animator.SetTrigger("Respawned");
+    }
+    public void DeadAnimation()
+    {
+        _animator.SetTrigger("Dying");
     }
 }
