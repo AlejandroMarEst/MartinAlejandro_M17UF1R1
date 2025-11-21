@@ -38,4 +38,12 @@ public class AnimationController : MonoBehaviour
         _animator.SetBool("Falling", false);
         _animator.SetTrigger("Landing");
     }
+    public void Respawn()
+    {
+        _animator.SetTrigger("Respawned");
+    }
+    public void DeadAnimation()
+    {
+        _animator.SetTrigger("Dying");
+    }
 }

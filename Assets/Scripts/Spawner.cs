@@ -7,12 +7,11 @@ public class Spawner : MonoBehaviour
     [SerializeField] private GameObject target;
     public Stack<GameObject> stack = new Stack<GameObject>();
     private Vector2 distanceToSpawnerTarget;
-    private float maxTimeBetweenShots;
+    public float maxTimeBetweenShots = 1.5f;
     private float currentTimeShots;
     private float ang;
     void Start()
     {
-        maxTimeBetweenShots = 1.5f;
         currentTimeShots = maxTimeBetweenShots;
         distanceToSpawnerTarget = target.transform.position - transform.position;
         ang = (Mathf.Atan2(distanceToSpawnerTarget.y, distanceToSpawnerTarget.x) * 180f / Mathf.PI);

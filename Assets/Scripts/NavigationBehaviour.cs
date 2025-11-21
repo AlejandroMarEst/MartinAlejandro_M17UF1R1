@@ -12,4 +12,12 @@ public class NavigationBehaviour : MonoBehaviour
         Application.Quit();
         Debug.Log("Exiting Game");
     }
+    public void ToMenu()
+    {
+        SceneManager.LoadScene("StartMenu");
+    }
+    public void FinishGame()
+    {
+        SceneManager.LoadScene("Finish");
+    }
 }

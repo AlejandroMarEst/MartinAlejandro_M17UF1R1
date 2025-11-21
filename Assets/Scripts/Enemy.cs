@@ -46,7 +46,7 @@ public class Enemy : Character
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.layer == 9 || collision.gameObject.layer == 10)
+        if (collision.gameObject.layer ==   9 || collision.gameObject.layer == 10)
         {
             gameObject.SetActive(false);
         }

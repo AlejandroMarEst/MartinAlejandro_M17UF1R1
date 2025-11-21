@@ -58,4 +58,10 @@ public class MoveBehaviour : MonoBehaviour
             jumpHeight = -jumpHeight;
         }
     }
+    public void Respawn(Vector2 coords)
+    {
+        _anim.DeadAnimation();
+        _rb.transform.position = coords;
+        _anim.Respawn();
+    }
 }
