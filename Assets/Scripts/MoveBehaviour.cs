@@ -15,6 +15,7 @@ public class MoveBehaviour : MonoBehaviour
     {
         _rb = GetComponent<Rigidbody2D>();
         _anim = GetComponent<AnimationController>();
+        isFlipped = _rb.transform.localScale.y < 0;
     }
     void FixedUpdate()
     {

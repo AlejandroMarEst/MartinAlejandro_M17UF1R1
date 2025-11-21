@@ -11,12 +11,13 @@ public class Enemy : Character
     private bool wallCheck;
     public float maxTimeBetweenFlip;
     private float currentTimeBetweenFlip;
-    private bool flipped = false;
+    private bool flipped;
     public bool flips = false;
     void Start()
     {
         currentTimeBetweenFlip = maxTimeBetweenFlip;
         direction = new Vector2(speed, 0);
+        flipped = transform.localScale.y < 0;
     }
     void FixedUpdate()
     {
@@ -41,6 +42,13 @@ public class Enemy : Character
             _mb.FlipGravity();
             flipped = !flipped;
             currentTimeBetweenFlip += maxTimeBetweenFlip;
+        }
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.layer == 9 || collision.gameObject.layer == 10)
+        {
+            gameObject.SetActive(false);
         }
     }
     private void ChangeDirection()
